@@ -14,6 +14,9 @@ let entrada = prompt("Ingresar un nombre de un banda"); {
             case "Guns and Roses":
                 alert("Correcto");
                 break;
+            case "AC/DC":
+                alert("Correcto");
+                break;
            default:
                alert("No es")
                break;
