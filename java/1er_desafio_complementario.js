@@ -1,28 +1,18 @@
+alert ("Bienvendio/a")
 
- let ingresarNumero = parseInt(prompt("Ingresar Numero"));
- for (let i = 1; i <= 3; i++) {
-     let resultado = ingresarNumero + i ;
-     alert(ingresarNumero + " + "+ i +" = "+ resultado);
-      continue
-    }
+let personas = parseInt(prompt("Numere las cantidad de personas a ingresar"))
+let edad;
+let edadAcumulada = 0;
 
-let entrada = prompt("Ingresar un nombre de un banda"); {
-       switch (entrada) {
-           case "Metallica":
-                alert("Acertaste");
-                break;
-            case "Guns and Roses":
-                alert("Correcto");
-                break;
-            case "AC/DC":
-                alert("Correcto");
-                break;
-           default:
-               alert("No es")
-               break;
-         }
-       while(entrada != "ESC" ) {
+function PromedioEdades(edad, cant) {
+    let promedio = edad / cant;
+    alert (promedio)
+    return promedio;
+}
 
-       }
-      
-    }
+for (let i = 0; i < personas ; i ++) {
+    edad = parseInt (prompt ("Ingrese sus edades"))
+    edadAcumulada += edad;
+    console.log(edadAcumulada);
+}
+PromedioEdades (edadAcumulada, personas)
